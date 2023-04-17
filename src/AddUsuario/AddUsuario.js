@@ -21,7 +21,7 @@ const AddUsuario = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('/api1/api/v1/usuario');
+      const response = await fetch('/api1/v1/usuario');
       const json = await response.json();
       setData(json); 
       
@@ -66,7 +66,7 @@ const AddUsuario = () => {
                             }
                         ]
                     };
-                    fetch("/api1/api/v1/usuario",{
+                    fetch("/api1/v1/usuario",{
                         headers:{
                             "Content-type":"application/json",
                         },
@@ -93,7 +93,7 @@ const AddUsuario = () => {
                             }
                         ]
                     };
-                    fetch("/api1/api/v1/usuario",{
+                    fetch("/api1/v1/usuario",{
                         headers:{
                             "Content-type":"application/json",
                         },

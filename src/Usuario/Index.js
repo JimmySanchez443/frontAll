@@ -9,7 +9,7 @@ function Usuario(){
 
 
   useEffect(() => {
-         fetch('/api1/api/v1/usuario')
+         fetch('/api1/v1/usuario')
           .then(response => response.json())
           .then(data => setData(data));
           console.log(data);
@@ -18,7 +18,7 @@ function Usuario(){
       
       function idLog(rowData) {
         if (window.confirm('¿Está seguro de eliminar este usuario?')) {
-          fetch('/api1/api/v1/delete/usuario/'+rowData.id, {
+          fetch('/api1/v1/delete/usuario/'+rowData.id, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ function Usuario(){
           })
             .then(() => {
               // Si la solicitud DELETE es exitosa, actualiza los datos de la tabla
-              fetch('/api1/api/v1/usuario')
+              fetch('/api1/v1/usuario')
                 .then(response => response.json())
                 .then(data => setData(data));
                 

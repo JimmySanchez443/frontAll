@@ -33,7 +33,7 @@ function LoginPage() {
         };
 
         
-        fetch("/api1/api/v1/login",{
+        fetch("/api1/v1/login",{
             headers:{
                 "Content-type":"application/json",
             },
