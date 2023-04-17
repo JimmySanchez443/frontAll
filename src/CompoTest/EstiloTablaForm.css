@@ -1,0 +1,19 @@
+table {
+	font-size: 12px;
+}
+
+.table-bordered {
+	border-collapse: collapse;
+}
+
+.table-bordered th, .table-bordered td {
+	border: 1px solid #dee2e6;
+	padding: 0.5rem;
+}
+
+/* .center {
+	margin: auto; Centrar la tabla horizontalmente 
+}*/
+.center td, .center th {
+	text-align: center; /* Centrar el texto verticalmente */
+}
